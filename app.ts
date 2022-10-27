@@ -10,9 +10,8 @@ dotenv.config();
 
 const url = process.env.WEATHER_REQUEST_URL;
 
-
-
 try {
+
     const config: AxiosRequestConfig = {
         method: 'get',
         url: `${url}?latitude=${52.52}&longitude=${13.41}`,
