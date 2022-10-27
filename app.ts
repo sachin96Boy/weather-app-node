@@ -21,7 +21,8 @@ try {
     }
 
     axios(config).then((response: AxiosResponse) => {
-        console.log(response.data);
+        const data = JSON.stringify(response.data);
+        console.log(data);
     }).catch((error: AxiosError) => {
         console.log(error);
     });
