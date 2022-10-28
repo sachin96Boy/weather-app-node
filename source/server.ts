@@ -9,8 +9,11 @@ const app: Express = express();
 dotenv.config();
 
 app.use(cors());
+/** Logging */
 app.use(morgan('dev'));
+/** Takes care of JSON data */
 app.use(express.json());
+/** Parse the request */
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/', weatherRoutes);

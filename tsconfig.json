@@ -15,10 +15,18 @@
         // but *only* in ts-node.  Useful if you want ts-node and tsc to use
         // different options with a single tsconfig.json.
         "module": "CommonJS",
-      }
+      },
       
     },
     "compilerOptions": {
       // typescript options here
-    }
+      "forceConsistentCasingInFileNames": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "outDir": "./build",
+        "rootDir": "./source",
+        "target": "es6",
+        "skipLibCheck": true,
+        "strict": true,
+    },
   }
